@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Shawbrook.FunBooksAndVideos.WebApi.props" />
+</Project>

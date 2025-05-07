@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shawbrook.FunBooksAndVideos.Application\Shawbrook.FunBooksAndVideos.Application.csproj" />
+    <ProjectReference Include="..\Shawbrook.FunBooksAndVideos.Core\Shawbrook.FunBooksAndVideos.Domain.csproj" />
+    <ProjectReference Include="..\Shawbrook.FunBooksAndVideos.Infrastructure\Shawbrook.FunBooksAndVideos.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

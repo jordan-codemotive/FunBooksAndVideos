@@ -1,0 +1,11 @@
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\bin\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.deps.json
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\bin\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.dll
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\bin\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.pdb
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.AssemblyInfoInputs.cache
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.AssemblyInfo.cs
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.dll
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\refint\Shawbrook.FunBooksAndVideos.Domain.dll
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\Shawbrook.FunBooksAndVideos.Domain.pdb
+C:\Users\jorda\source\repos\Shawbrook.FunBooksAndVideos\src\Shawbrook.FunBooksAndVideos.Core\obj\Debug\net9.0\ref\Shawbrook.FunBooksAndVideos.Domain.dll

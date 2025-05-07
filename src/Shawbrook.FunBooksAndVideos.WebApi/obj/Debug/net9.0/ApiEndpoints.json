@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "Shawbrook.FunBooksAndVideos.WebApi.Controllers.PurchaseOrderController",
+    "Method": "Submit",
+    "RelativePath": "api/v1/purchase-order/{purchaseOrderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "purchaseOrderId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Shawbrook.FunBooksAndVideos.Application.Models.Responses.PurchaseOrderResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Shawbrook.FunBooksAndVideos.WebApi.Controllers.PurchaseOrderController",
+    "Method": "Submit",
+    "RelativePath": "api/v1/purchase-order/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Shawbrook.FunBooksAndVideos.WebApi.Models.Requests.PurchaseOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

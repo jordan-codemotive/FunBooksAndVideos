@@ -1,0 +1,512 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\processors\\purchaseorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\processors\\purchaseorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure\\persistence\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure\\persistence\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\product\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\product\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseorderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseorderproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseorderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseorderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseordermembership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\purchaseorder\\purchaseordermembership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\enums\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\enums\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure\\shawbrook.funbooksandvideos.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure\\shawbrook.funbooksandvideos.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure\\persistence\\funbooksandvideosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure\\persistence\\funbooksandvideosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\shawbrook.funbooksandvideos.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\shawbrook.funbooksandvideos.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\shawbrook.funbooksandvideos.domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\shawbrook.funbooksandvideos.domain.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6728A9DD-F178-44A4-8A24-A5DDBC0CBCB1}|Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6728A9DD-F178-44A4-8A24-A5DDBC0CBCB1}|Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj|solutionrelative:shawbrook.funbooksandvideos.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{526D0F7B-D83D-4072-A8F0-20FB15A81C5E}|Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure.dependencyinjection\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{526D0F7B-D83D-4072-A8F0-20FB15A81C5E}|Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure.dependencyinjection\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{526D0F7B-D83D-4072-A8F0-20FB15A81C5E}|Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure.dependencyinjection\\shawbrook.funbooksandvideos.infrastructure.dependencyinjection.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{526D0F7B-D83D-4072-A8F0-20FB15A81C5E}|Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure.dependencyinjection\\shawbrook.funbooksandvideos.infrastructure.dependencyinjection.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6728A9DD-F178-44A4-8A24-A5DDBC0CBCB1}|Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.webapi\\shawbrook.funbooksandvideos.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6728A9DD-F178-44A4-8A24-A5DDBC0CBCB1}|Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj|solutionrelative:shawbrook.funbooksandvideos.webapi\\shawbrook.funbooksandvideos.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure\\persistence\\repositories\\purchaseorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure\\persistence\\repositories\\purchaseorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure\\persistence\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure\\persistence\\entities\\customerentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\repositories\\ipurchaseorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\repositories\\ipurchaseorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\queries\\igetpurchaseorderquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\queries\\igetpurchaseorderquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\models\\responses\\purchaseorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\models\\responses\\purchaseorderresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\models\\requests\\purchaseorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\models\\requests\\purchaseorderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.application\\models\\purchaseorderproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0710117-5265-4C03-86E8-910532894F1D}|Shawbrook.FunBooksAndVideos.Application\\Shawbrook.FunBooksAndVideos.Application.csproj|solutionrelative:shawbrook.funbooksandvideos.application\\models\\purchaseorderproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6728A9DD-F178-44A4-8A24-A5DDBC0CBCB1}|Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.webapi\\controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6728A9DD-F178-44A4-8A24-A5DDBC0CBCB1}|Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj|solutionrelative:shawbrook.funbooksandvideos.webapi\\controllers\\purchaseordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.infrastructure\\persistence\\entities\\purchaseorderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63D34ED2-1B06-4A3F-96BA-12270A919953}|Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj|solutionrelative:shawbrook.funbooksandvideos.infrastructure\\persistence\\entities\\purchaseorderentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jorda\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|c:\\users\\jorda\\source\\repos\\shawbrook.funbooksandvideos\\src\\shawbrook.funbooksandvideos.core\\models\\enums\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB42540A-1997-4E7C-B4BA-A2B93867BC7A}|Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Core.csproj|solutionrelative:shawbrook.funbooksandvideos.core\\models\\enums\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PurchaseOrderProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Processors\\PurchaseOrderProcessor.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Processors\\PurchaseOrderProcessor.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Processors\\PurchaseOrderProcessor.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Processors\\PurchaseOrderProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:53:18.576Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T19:10:17.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Shawbrook.FunBooksAndVideos.Domain",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Shawbrook.FunBooksAndVideos.Domain.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T19:10:35.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T18:27:01.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T18:27:06.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Shawbrook.FunBooksAndVideos.Infrastructure",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure\\Shawbrook.FunBooksAndVideos.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T18:19:32.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Shawbrook.FunBooksAndVideos.WebApi",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.WebApi\\Shawbrook.FunBooksAndVideos.WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-07T18:19:19.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IPurchaseOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Repositories\\IPurchaseOrderRepository.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Repositories\\IPurchaseOrderRepository.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Repositories\\IPurchaseOrderRepository.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Repositories\\IPurchaseOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T17:02:54.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T17:02:29.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\Product\\Product.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\Product\\Product.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\Product\\Product.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\Product\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T16:31:09.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T16:28:19.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FunBooksAndVideosDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\FunBooksAndVideosDbContext.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\FunBooksAndVideosDbContext.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\FunBooksAndVideosDbContext.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\FunBooksAndVideosDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T16:09:01.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:58:12.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PurchaseOrderProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Models\\PurchaseOrderProductDto.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Models\\PurchaseOrderProductDto.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Models\\PurchaseOrderProductDto.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Models\\PurchaseOrderProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:44:10.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PurchaseOrderResponse.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Models\\Responses\\PurchaseOrderResponse.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Models\\Responses\\PurchaseOrderResponse.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Models\\Responses\\PurchaseOrderResponse.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Models\\Responses\\PurchaseOrderResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:42:56.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PurchaseOrderEntity.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\PurchaseOrderEntity.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\PurchaseOrderEntity.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\PurchaseOrderEntity.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\PurchaseOrderEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:28:53.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IGetPurchaseOrderQuery.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Queries\\IGetPurchaseOrderQuery.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Queries\\IGetPurchaseOrderQuery.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Queries\\IGetPurchaseOrderQuery.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Queries\\IGetPurchaseOrderQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T15:14:48.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CustomerEntity.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\CustomerEntity.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\CustomerEntity.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\CustomerEntity.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Entities\\CustomerEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:30:19.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PurchaseOrder.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrder.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrder.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrder.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:26:29.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.WebApi\\Program.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.WebApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:08:45.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PurchaseOrderController.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.WebApi\\Controllers\\PurchaseOrderController.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.WebApi\\Controllers\\PurchaseOrderController.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.WebApi\\Controllers\\PurchaseOrderController.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.WebApi\\Controllers\\PurchaseOrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T09:35:09.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PurchaseOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\PurchaseOrderRepository.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\PurchaseOrderRepository.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\PurchaseOrderRepository.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Infrastructure\\Persistence\\Repositories\\PurchaseOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:43:58.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Container.targets",
+              "DocumentMoniker": "C:\\Users\\jorda\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
+              "ToolTip": "C:\\Users\\jorda\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\build\\Container.targets",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAqwOIAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-05-07T14:55:42.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PurchaseOrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderItem.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderItem.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderItem.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:36:54.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PurchaseOrderProduct.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderProduct.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderProduct.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderProduct.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:36:03.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PurchaseOrderMembership.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderMembership.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderMembership.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderMembership.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\PurchaseOrder\\PurchaseOrderMembership.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:36:53.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\ProductType.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\ProductType.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\ProductType.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\ProductType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:36:22.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MembershipType.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\MembershipType.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\MembershipType.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\MembershipType.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Core\\Models\\Enums\\MembershipType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:36:37.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PurchaseOrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Models\\Requests\\PurchaseOrderRequest.cs",
+              "RelativeDocumentMoniker": "Shawbrook.FunBooksAndVideos.Application\\Models\\Requests\\PurchaseOrderRequest.cs",
+              "ToolTip": "C:\\Users\\jorda\\source\\repos\\Shawbrook.FunBooksAndVideos\\src\\Shawbrook.FunBooksAndVideos.Application\\Models\\Requests\\PurchaseOrderRequest.cs",
+              "RelativeToolTip": "Shawbrook.FunBooksAndVideos.Application\\Models\\Requests\\PurchaseOrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T11:01:01.784Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
