@@ -1,6 +1,28 @@
 @Shawbrook.FunBooksAndVideos.WebApi_HostAddress = http://localhost:5168
 
-GET {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/weatherforecast/
+POST {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/submit
 Accept: application/json
-
+Content-Type: application/json
+{
+  "customerId": 1,
+  "products": [
+    {
+      "id": 1,
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "quantity": 3
+    }
+  ],
+  "membership": {
+    "id": 1
+  }
+}
 ###
+
+GET {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/1
+Accept: application/json
+Content-Type: application/json
+###
+
