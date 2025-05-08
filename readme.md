@@ -9,4 +9,4 @@ I have a number of ideas on how this could be improved -
 - Improve validation to collect all errors before returning an error response.
 - Validation check the products the provided products are unique.
 - Add proper database.
-- Add additional endpoints for other entities - Product, Membership & Customer
+- Add additional endpoints for other entities - Product, Membership & Customer.

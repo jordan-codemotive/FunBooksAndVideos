@@ -1,7 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Shawbrook.FunBooksAndVideos.Application.Processors;
 using Shawbrook.FunBooksAndVideos.Application.Queries;
-using Shawbrook.FunBooksAndVideos.Application.Repositories;
 
 namespace Shawbrook.FunBooksAndVideos.Application.Extensions;
 
@@ -11,7 +10,6 @@ public static class ServiceCollectionExtensions
     {
         services.AddScoped<IPurchaseOrderProcessor, PurchaseOrderProcessor>();
         services.AddScoped<IGetPurchaseOrderQuery, GetPurchaseOrderQuery>();
-                
 
         return services;
     }

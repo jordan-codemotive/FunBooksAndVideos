@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Persistence\Extensions\**" />
+    <EmbeddedResource Remove="Persistence\Extensions\**" />
+    <None Remove="Persistence\Extensions\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Ardalis.Result" Version="10.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.4" />
   </ItemGroup>
@@ -18,10 +24,6 @@
 
 <ItemGroup>
 	<InternalsVisibleTo Include="Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection" />
-</ItemGroup>
-
-<ItemGroup>
-  <Folder Include="Persistence\Extensions\" />
 </ItemGroup>
 
 </Project>

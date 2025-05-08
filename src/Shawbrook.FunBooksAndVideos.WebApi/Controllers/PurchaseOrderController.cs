@@ -26,8 +26,7 @@ namespace Shawbrook.FunBooksAndVideos.WebApi.Controllers
             [FromServices] IPurchaseOrderProcessor processor,
             PurchaseOrderRequest request)
         {
-            // TODO: write validation for http request
-
+            // TODO: add validator for request.
             var result = await processor.Process(request);
 
             return this.ToActionResult(result);

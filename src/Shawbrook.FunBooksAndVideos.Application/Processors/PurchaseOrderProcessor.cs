@@ -5,11 +5,6 @@ using Shawbrook.FunBooksAndVideos.WebApi.Models.Requests;
 
 namespace Shawbrook.FunBooksAndVideos.Application.Processors;
 
-public interface IPurchaseOrderProcessor
-{
-    public Task<Result> Process(PurchaseOrderRequest request);
-}
-
 internal class PurchaseOrderProcessor(
     IProductRepository productRepository,
     IPurchaseOrderRepository purchaseOrderRepository,
@@ -39,22 +34,18 @@ internal class PurchaseOrderProcessor(
             });
         }
 
-        foreach (var membershipLineItem in request.Memberships)
+        var membership = membershipRepository.Get(request.Membership.Id);
+        if (membership.IsNotFound())
         {
-            var membership = membershipRepository.Get(membershipLineItem.Id);
-
-            if (membership.IsNotFound())
-            {
-                // TODO: Add logging
-                // TODO: Improve by collecting all errors and returning them at once.
-                return Result.NotFound($"Product with id {membershipLineItem.Id} not found.");
-            }
-
-            purchaseOrder.AddLineItem(new PurchaseOrderMembership
-            {
-                MembershipId = membershipLineItem.Id,
-            });
+            // TODO: Add logging
+            // TODO: Improve by collecting all errors and returning them at once.
+            return Result.NotFound($"Product with id {request.Membership.Id} not found.");
         }
+
+        purchaseOrder.AddLineItem(new PurchaseOrderMembership
+        {
+            MembershipId = request.Membership.Id,
+        });
 
         await purchaseOrderRepository.Save(purchaseOrder);
 

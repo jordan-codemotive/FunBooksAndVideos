@@ -10,7 +10,7 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructureServices(this IServiceCollection services)
     {
-        // This project exists to register the infrastructure services, without the need for the main project to depend on the infrastructure project.
+        // This project exists to register infrastructure services, without the need for the main project to depend on the infrastructure project directly.
 
         services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
