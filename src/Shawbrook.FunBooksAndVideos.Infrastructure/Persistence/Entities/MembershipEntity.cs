@@ -6,7 +6,7 @@ namespace Shawbrook.FunBooksAndVideos.Infrastructure.Persistence.Entities
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public byte Type { get; set; }
+        public required string Name { get; set; }
+        public required byte Type { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 
 public enum ProductType
 {
-    None = 0,
     Book = 1,
-    Video = 2
+    Video = 2,
+    Membership = 3
 }

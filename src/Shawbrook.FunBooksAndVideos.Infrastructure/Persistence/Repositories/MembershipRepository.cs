@@ -11,9 +11,9 @@ internal class MembershipRepository : IMembershipRepository
 
     public MembershipRepository()
     {
-        _membership.Add(new Membership(id: 1, name: "Book Club", price: 5.99, type: MembershipType.BookClub));
-        _membership.Add(new Membership(id: 2, name: "Video Club", price: 10.99, type: MembershipType.VideoClub));
-        _membership.Add(new Membership(id: 3, name: "Premium Club", price: 12.99, type: MembershipType.PremiumClub));
+        _membership.Add(new Membership(id: (int)MembershipType.BookClub, name: "Book Club", price: 5.99, type: MembershipType.BookClub));
+        _membership.Add(new Membership(id: (int)MembershipType.VideoClub, name: "Video Club", price: 10.99, type: MembershipType.VideoClub));
+        _membership.Add(new Membership(id: (int)MembershipType.PremiumClub, name: "Premium Club", price: 12.99, type: MembershipType.PremiumClub));
     }
 
     public Result<Membership> Get(int productId)

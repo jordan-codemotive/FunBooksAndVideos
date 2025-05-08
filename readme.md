@@ -12,4 +12,5 @@ I have a number of ideas on how this could be improved -
 - Add additional endpoints for other entities - Product, Membership & Customer.
 - Add global exception handler.
 - Add logging.
-- Spead out PurchaseOrderProcessor logic a bit more.
+- Spread out PurchaseOrderProcessor logic a bit more.
+- Add mappers.

@@ -1,4 +1,5 @@
 ﻿using Ardalis.Result;
+using Shawbrook.FunBooksAndVideos.Application.Models;
 using Shawbrook.FunBooksAndVideos.Application.Repositories;
 using Shawbrook.FunBooksAndVideos.Application.Services;
 using Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
@@ -25,24 +26,27 @@ internal class PurchaseOrderProcessor(
 
         var purchaseOrder = PurchaseOrder.CreateNew(request.CustomerId);
 
-        var membership = membershipRepository.Get(request.Membership.Id);
-        if (membership.IsNotFound())
+        if (request.Membership is not null)
         {
-            // TODO: Add logging & Improve by collecting all errors and returning them at once.
-            return Result.NotFound($"Product with id {request.Membership.Id} not found.");
-        }
+            var membership = membershipRepository.Get(request.Membership.Id);
+            if (membership.IsNotFound())
+            {
+                // TODO: Add logging & Improve by collecting all errors and returning them at once.
+                return Result.NotFound($"Product with id {request.Membership.Id} not found.");
+            }
 
-        purchaseOrder.AddLineItem(new PurchaseOrderMembership
-        {
-            MembershipId = request.Membership.Id,
-        });
+            purchaseOrder.AddLineItem(new OrderLineItem
+            {                
+                MembershipType = membership.Value.Type,
+                Price = membership.Value.Price,
+                PurchaseOrderId = purchaseOrder.Id,
+                Quantity = 1
+            });
 
-        if (purchaseOrder.ContainsMembership())
-        {
             customerRepository.ActivateCustomer(request.CustomerId, request.Membership.Id);
         }
 
-        foreach (var productLineItem in request.Products)
+        foreach (var productLineItem in request.Products ?? Enumerable.Empty<PurchaseOrderProductDto>())
         {
             var product = productRepository.Get(productLineItem.Id);
 
@@ -52,12 +56,12 @@ internal class PurchaseOrderProcessor(
                 return Result.NotFound($"Product with id {productLineItem.Id} not found.");
             }
 
-            purchaseOrder.AddLineItem(new PurchaseOrderProduct
+            purchaseOrder.AddLineItem(new OrderLineItem
             {
-                ProductId = productLineItem.Id,
-                Quantity = productLineItem.Quantity,
-                Type = product.Value.Type,
-                Price = 1
+                ProductType = product.Value.Type,
+                Price = product.Value.Price,
+                PurchaseOrderId = purchaseOrder.Id,
+                Quantity = productLineItem.Quantity
             });
         }
 

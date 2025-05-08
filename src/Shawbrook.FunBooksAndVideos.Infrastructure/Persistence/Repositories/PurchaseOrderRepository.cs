@@ -17,16 +17,38 @@ internal class PurchaseOrderRepository(FunBooksAndVideosDbContext dbContext) : I
             return Result.NotFound();
         }
 
-        return PurchaseOrder.CreateExisting(
+        var purchaseOrder = PurchaseOrder.CreateExisting(
             customerId: entity.CustomerId,
             id: entity.Id);
-           
+
+        foreach (var item in entity.Items)
+        {
+            purchaseOrder.AddLineItem(new OrderLineItem
+            {
+                Id = item.Id,
+                Price = item.Price,
+                Quantity = item.Quantity,
+                PurchaseOrderId = item.PurchaseOrderId,
+                MembershipType = (MembershipType?)item.MembershipType,
+                ProductId = item.ProductId,
+            });
+        } 
+        
+        return purchaseOrder;
     }
 
     public async Task<Result<int>> Save(PurchaseOrder purchaseOrder)
     {
         // TODO: Create mapper.
-        var items = purchaseOrder.OrderLines.Select(x => new PurchaseOrderLineItemEntity() { Quantity = x.Quantity }).ToList();
+        var items = purchaseOrder.OrderLines.Select(x => new PurchaseOrderLineItemEntity 
+        { 
+            Quantity = x.Quantity, 
+            Price = x.Price, 
+            PurchaseOrderId = x.PurchaseOrderId,
+            MembershipType = (byte?) x.MembershipType,
+            ProductId = x.ProductId
+        }).ToList();
+        
         var purchaseOrderEntity = new PurchaseOrderEntity
         {
             CustomerId = purchaseOrder.CustomerId,
@@ -36,6 +58,6 @@ internal class PurchaseOrderRepository(FunBooksAndVideosDbContext dbContext) : I
         dbContext.PurchaseOrders.Add(purchaseOrderEntity);
         await dbContext.SaveChangesAsync();
 
-        return purchaseOrder.Id;
+        return purchaseOrderEntity.Id;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Ardalis.Result;
+using Microsoft.Extensions.Logging;
 using Shawbrook.FunBooksAndVideos.Application.Repositories;
 using Shawbrook.FunBooksAndVideos.Domain.Models.Customer;
 using Shawbrook.FunBooksAndVideos.Domain.Models.Enums;
@@ -8,10 +9,13 @@ namespace Shawbrook.FunBooksAndVideos.Infrastructure.Persistence.Repositories;
 internal class CustomerRepository : ICustomerRepository
 {
     private readonly IList<Customer> _customers = new List<Customer>();
-    public CustomerRepository()
+    private readonly ILogger<CustomerRepository> _logger;
+
+    public CustomerRepository(ILogger<CustomerRepository> logger)
     {
         _customers.Add(new Customer(1, "John", "Doe", 1, CustomerStatus.Inactive));
         _customers.Add(new Customer(2, "Sarah", "Doe", 1, CustomerStatus.Active));
+        _logger = logger;
     }
 
     public Result ActivateCustomer(int customerId, int membershipId)
@@ -24,6 +28,8 @@ internal class CustomerRepository : ICustomerRepository
 
         customer.Membership = membershipId;
         customer.Status = CustomerStatus.Active;
+
+        _logger.LogInformation("Customer {customerId} activated with membership {membershipId}.", customerId, membershipId);
 
         return Result.Success();
     }

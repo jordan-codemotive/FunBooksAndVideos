@@ -1,6 +1,4 @@
-﻿using Ardalis.Result;
-
-namespace Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
+﻿namespace Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
 
 public class PurchaseOrder
 {
@@ -11,12 +9,12 @@ public class PurchaseOrder
 
     public int Id { get; private set; }
     public int CustomerId { get; init; }
-    public IList<PurchaseOrderItem> OrderLines { get; } = [];
-    public decimal TotalPrice => OrderLines.Sum(i => i.Price);
+    public IList<OrderLineItem> OrderLines { get; } = [];
+    public double TotalPrice => OrderLines.Sum(i => i.Price);
     public bool ContainsMembership() =>
-       OrderLines.Any(line => line is PurchaseOrderMembership);
+       OrderLines.Any(line => line.ProductType == ProductType.Membership);
     public bool ContainsPhysicalProduct() =>
-        OrderLines.Any(line => line is PurchaseOrderProduct);
+        OrderLines.Any(line => new List<ProductType> { ProductType.Video, ProductType.Book }.Contains(line.ProductType));
 
     public static PurchaseOrder CreateNew(int customerId)
     {
@@ -28,15 +26,9 @@ public class PurchaseOrder
         return new PurchaseOrder(customerId) { Id = id };
     }
 
-    public void AddLineItem(PurchaseOrderItem item)
-    {      
-        var validateResult = item.Validate();
-        
-        if (!validateResult.IsValid)
-        {
-            // TODO: Log a warning.
-            return;
-        }           
+    public void AddLineItem(OrderLineItem item)
+    {
+        item.Validate();        
 
         OrderLines.Add(item);
     }
