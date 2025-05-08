@@ -32,7 +32,7 @@ public class PurchaseOrder
     {      
         var validateResult = item.Validate();
         
-        if (validateResult.IsInvalid())
+        if (!validateResult.IsValid)
         {
             // TODO: Log a warning.
             return;

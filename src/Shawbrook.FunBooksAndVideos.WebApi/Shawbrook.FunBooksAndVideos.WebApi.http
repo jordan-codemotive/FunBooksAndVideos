@@ -1,10 +1,11 @@
 @Shawbrook.FunBooksAndVideos.WebApi_HostAddress = http://localhost:5168
 
+# valid submission
 POST {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/submit
 Accept: application/json
 Content-Type: application/json
 {
-  "customerId": 1,
+  "customerId": 2,
   "products": [
     {
       "id": 1,
@@ -16,11 +17,83 @@ Content-Type: application/json
     }
   ],
   "membership": {
-    "id": 1
+    "id": 1,
+    "type": "Book"
   }
 }
 ###
 
+# Not found customer
+POST {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/submit
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": 5,
+  "products": [
+    {
+      "id": 1,
+      "quantity": 2
+    },
+    {
+      "id": 2,
+      "quantity": 3
+    }
+  ],
+  "membership": {
+    "id": 1,
+    "type": "Book"
+  }
+}
+###
+
+# Not found product
+POST {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/submit
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": 1,
+  "products": [
+    {
+      "id": 1,
+      "quantity": 2
+    },
+    {
+      "id": 5,
+      "quantity": 3
+    }
+  ],
+  "membership": {
+    "id": 1,
+    "type": "Book"
+  }
+}
+###
+
+# Not found membership
+POST {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/submit
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": 1,
+  "products": [
+    {
+      "id": 1,
+      "quantity": 2
+    },
+    {
+      "id": 1,
+      "quantity": 3
+    }
+  ],
+  "membership": {
+    "id": 5,
+    "type": "Book"
+  }
+}
+###
+
+
+# get new purchase order
 GET {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/1
 Accept: application/json
 Content-Type: application/json

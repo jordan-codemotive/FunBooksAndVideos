@@ -56,7 +56,8 @@ internal class PurchaseOrderProcessor(
             {
                 ProductId = productLineItem.Id,
                 Quantity = productLineItem.Quantity,
-                Type = product.Value.Type
+                Type = product.Value.Type,
+                Price = 1
             });
         }
 
