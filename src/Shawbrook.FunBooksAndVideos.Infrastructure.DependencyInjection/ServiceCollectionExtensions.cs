@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Shawbrook.FunBooksAndVideos.Application.Repositories;
+using Shawbrook.FunBooksAndVideos.Application.Services;
+using Shawbrook.FunBooksAndVideos.Infrastructure.Messaging;
 using Shawbrook.FunBooksAndVideos.Infrastructure.Persistence;
 using Shawbrook.FunBooksAndVideos.Infrastructure.Persistence.Repositories;
 
@@ -15,6 +17,8 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IPurchaseOrderRepository, PurchaseOrderRepository>();
         services.AddScoped<IProductRepository, ProductRepository>();
         services.AddScoped<IMembershipRepository, MembershipRepository>();
+        services.AddScoped<ICustomerRepository, CustomerRepository>();
+        services.AddScoped<IShippingService, ShippingService>();
 
         services.AddDbContext<FunBooksAndVideosDbContext>(options => options.UseInMemoryDatabase("FunBooksAndVideosDb"));
 

@@ -1,19 +1,46 @@
 ﻿using Ardalis.Result;
 using Shawbrook.FunBooksAndVideos.Application.Repositories;
+using Shawbrook.FunBooksAndVideos.Application.Services;
 using Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
 using Shawbrook.FunBooksAndVideos.WebApi.Models.Requests;
 
 namespace Shawbrook.FunBooksAndVideos.Application.Processors;
 
 internal class PurchaseOrderProcessor(
+    ICustomerRepository customerRepository,
     IProductRepository productRepository,
     IPurchaseOrderRepository purchaseOrderRepository,
-    IMembershipRepository membershipRepository)
+    IMembershipRepository membershipRepository,
+    IShippingService shippingService)
     : IPurchaseOrderProcessor
 {
     public async Task<Result> Process(PurchaseOrderRequest request)
     {
+        var customerExists = customerRepository.CheckCustomerExists(request.CustomerId);
+
+        if (customerExists is false)
+        {
+            return Result.NotFound($"Customer with id {request.CustomerId} not found.");
+        }
+
         var purchaseOrder = PurchaseOrder.CreateNew(request.CustomerId);
+
+        var membership = membershipRepository.Get(request.Membership.Id);
+        if (membership.IsNotFound())
+        {
+            // TODO: Add logging & Improve by collecting all errors and returning them at once.
+            return Result.NotFound($"Product with id {request.Membership.Id} not found.");
+        }
+
+        purchaseOrder.AddLineItem(new PurchaseOrderMembership
+        {
+            MembershipId = request.Membership.Id,
+        });
+
+        if (purchaseOrder.ContainsMembership())
+        {
+            customerRepository.ActivateCustomer(request.CustomerId, request.Membership.Id);
+        }
 
         foreach (var productLineItem in request.Products)
         {
@@ -21,8 +48,7 @@ internal class PurchaseOrderProcessor(
 
             if (product.IsNotFound())
             {
-                // TODO: Add logging
-                // TODO: Improve by collecting all errors and returning them at once.
+                // TODO: Add logging & Improve by collecting all errors and returning them at once.
                 return Result.NotFound($"Product with id {productLineItem.Id} not found.");
             }
 
@@ -34,20 +60,17 @@ internal class PurchaseOrderProcessor(
             });
         }
 
-        var membership = membershipRepository.Get(request.Membership.Id);
-        if (membership.IsNotFound())
+        // TODO: implement transaction control - so if any operation fails all of them are rolled back.
+        var saveResult = await purchaseOrderRepository.Save(purchaseOrder);
+
+        if (!saveResult.IsSuccess)
         {
-            // TODO: Add logging
-            // TODO: Improve by collecting all errors and returning them at once.
-            return Result.NotFound($"Product with id {request.Membership.Id} not found.");
+            return Result.Error("Failed to save purchase order.");
         }
-
-        purchaseOrder.AddLineItem(new PurchaseOrderMembership
+        else if (purchaseOrder.ContainsPhysicalProduct())
         {
-            MembershipId = request.Membership.Id,
-        });
-
-        await purchaseOrderRepository.Save(purchaseOrder);
+            shippingService.GenerateShippingSlip(purchaseOrder);
+        }
 
         return Result.Success();
     }

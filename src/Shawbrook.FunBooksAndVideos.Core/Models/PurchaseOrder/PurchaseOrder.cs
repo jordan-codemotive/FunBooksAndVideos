@@ -11,8 +11,12 @@ public class PurchaseOrder
 
     public int Id { get; private set; }
     public int CustomerId { get; init; }
-    public IList<PurchaseOrderItem> Items { get; } = [];
-    public decimal TotalPrice => Items.Sum(i => i.Price);
+    public IList<PurchaseOrderItem> OrderLines { get; } = [];
+    public decimal TotalPrice => OrderLines.Sum(i => i.Price);
+    public bool ContainsMembership() =>
+       OrderLines.Any(line => line is PurchaseOrderMembership);
+    public bool ContainsPhysicalProduct() =>
+        OrderLines.Any(line => line is PurchaseOrderProduct);
 
     public static PurchaseOrder CreateNew(int customerId)
     {
@@ -34,6 +38,6 @@ public class PurchaseOrder
             return;
         }           
 
-        Items.Add(item);
+        OrderLines.Add(item);
     }
 }

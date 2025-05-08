@@ -23,10 +23,10 @@ internal class PurchaseOrderRepository(FunBooksAndVideosDbContext dbContext) : I
            
     }
 
-    public async Task<int> Save(PurchaseOrder purchaseOrder)
+    public async Task<Result<int>> Save(PurchaseOrder purchaseOrder)
     {
         // TODO: Create mapper.
-        var items = purchaseOrder.Items.Select(x => new PurchaseOrderLineItemEntity() { Quantity = x.Quantity }).ToList();
+        var items = purchaseOrder.OrderLines.Select(x => new PurchaseOrderLineItemEntity() { Quantity = x.Quantity }).ToList();
         var purchaseOrderEntity = new PurchaseOrderEntity
         {
             CustomerId = purchaseOrder.CustomerId,

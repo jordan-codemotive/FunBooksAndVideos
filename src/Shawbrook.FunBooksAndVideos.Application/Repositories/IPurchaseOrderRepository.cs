@@ -6,5 +6,5 @@ namespace Shawbrook.FunBooksAndVideos.Application.Repositories;
 public interface IPurchaseOrderRepository
 {
     public Task<Result<PurchaseOrder>> Get(int purchaseOrderId);
-    public Task<int> Save(PurchaseOrder purchaseOrder);
+    public Task<Result<int>> Save(PurchaseOrder purchaseOrder);
 }
