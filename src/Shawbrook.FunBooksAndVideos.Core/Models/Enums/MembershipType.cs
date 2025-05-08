@@ -2,7 +2,8 @@
 
 public enum MembershipType
 {
-    BookClub = 0,
-    VideoClub = 1,
-    PremiumClub = 2
+    None = 0,
+    BookClub = 1,
+    VideoClub = 2,
+    PremiumClub = 3
 }

@@ -17,12 +17,13 @@ internal class PurchaseOrderRepository(FunBooksAndVideosDbContext dbContext) : I
             return Result.NotFound();
         }
 
-        return new PurchaseOrder(
-            id: entity!.Id,
-            customerId: entity.CustomerId);
+        return PurchaseOrder.CreateExisting(
+            customerId: entity.CustomerId,
+            id: entity.Id);
+           
     }
 
-    public async Task<int> Add(PurchaseOrder purchaseOrder)
+    public async Task<int> Save(PurchaseOrder purchaseOrder)
     {
         // TODO: Create mapper.
         var items = purchaseOrder.Items.Select(x => new PurchaseOrderLineItemEntity() { Quantity = x.Quantity }).ToList();

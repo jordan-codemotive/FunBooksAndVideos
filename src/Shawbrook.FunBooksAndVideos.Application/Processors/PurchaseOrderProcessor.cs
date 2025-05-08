@@ -12,12 +12,13 @@ public interface IPurchaseOrderProcessor
 
 internal class PurchaseOrderProcessor(
     IProductRepository productRepository,
-    IPurchaseOrderRepository purchaseOrderRepository)
+    IPurchaseOrderRepository purchaseOrderRepository,
+    IMembershipRepository membershipRepository)
     : IPurchaseOrderProcessor
 {
     public async Task<Result> Process(PurchaseOrderRequest request)
     {
-        var purchaseOrder = new PurchaseOrder(1, request.CustomerId);
+        var purchaseOrder = PurchaseOrder.CreateNew(request.CustomerId);
 
         foreach (var productLineItem in request.Products)
         {
@@ -29,6 +30,7 @@ internal class PurchaseOrderProcessor(
                 // TODO: Improve by collecting all errors and returning them at once.
                 return Result.NotFound($"Product with id {productLineItem.Id} not found.");
             }
+
             purchaseOrder.AddLineItem(new PurchaseOrderProduct
             {
                 ProductId = productLineItem.Id,
@@ -37,15 +39,24 @@ internal class PurchaseOrderProcessor(
             });
         }
 
-        foreach (var membership in request.Memberships)
+        foreach (var membershipLineItem in request.Memberships)
         {
+            var membership = membershipRepository.Get(membershipLineItem.Id);
+
+            if (membership.IsNotFound())
+            {
+                // TODO: Add logging
+                // TODO: Improve by collecting all errors and returning them at once.
+                return Result.NotFound($"Product with id {membershipLineItem.Id} not found.");
+            }
+
             purchaseOrder.AddLineItem(new PurchaseOrderMembership
             {
-                MembershipId = membership.Id,
+                MembershipId = membershipLineItem.Id,
             });
         }
 
-        await purchaseOrderRepository.Add(purchaseOrder);
+        await purchaseOrderRepository.Save(purchaseOrder);
 
         return Result.Success();
     }

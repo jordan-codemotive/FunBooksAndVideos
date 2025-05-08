@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shawbrook.FunBooksAndVideos.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+606e347760bfbac7a86c64c995750c29bc01c82e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shawbrook.FunBooksAndVideos.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shawbrook.FunBooksAndVideos.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,5 @@
 using Shawbrook.FunBooksAndVideos.Application.Extensions;
+using Shawbrook.FunBooksAndVideos.Application.Repositories;
 using Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);

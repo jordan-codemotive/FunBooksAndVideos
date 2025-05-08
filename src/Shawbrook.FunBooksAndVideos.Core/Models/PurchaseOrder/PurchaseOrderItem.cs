@@ -1,4 +1,6 @@
-﻿namespace Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
+﻿using Ardalis.Result;
+
+namespace Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
 
 public abstract class PurchaseOrderItem()
 {
@@ -6,5 +8,6 @@ public abstract class PurchaseOrderItem()
     public int PurchaseOrderId { get; init; }
     public int Quantity { get; init; }    
     public decimal Price { get; init; }
-    //public abstract bool Validate();
+    
+    public abstract Result Validate();
 }

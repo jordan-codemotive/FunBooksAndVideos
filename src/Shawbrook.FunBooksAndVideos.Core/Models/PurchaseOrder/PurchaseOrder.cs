@@ -1,22 +1,38 @@
-﻿namespace Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
+﻿using Ardalis.Result;
 
-public class PurchaseOrder(
-    int id,
-    int customerId)
+namespace Shawbrook.FunBooksAndVideos.Domain.Models.PurchaseOrder;
+
+public class PurchaseOrder
 {
-    public int Id => id;
-    public int CustomerId => customerId;
+    private PurchaseOrder(int customerId)
+    {
+        CustomerId = customerId;
+    }
+
+    public int Id { get; private set; }
+    public int CustomerId { get; init; }
     public IList<PurchaseOrderItem> Items { get; } = [];
     public decimal TotalPrice => Items.Sum(i => i.Price);
 
-    public void AddLineItem(PurchaseOrderItem item)
+    public static PurchaseOrder CreateNew(int customerId)
     {
-        if (item is null)
-        {
-            throw new ArgumentNullException(nameof(item));
-        }
+        return new PurchaseOrder(customerId);
+    }
 
-        // TODO: Validate line item
+    public static PurchaseOrder CreateExisting(int id, int customerId)
+    {
+        return new PurchaseOrder(customerId) { Id = id };
+    }
+
+    public void AddLineItem(PurchaseOrderItem item)
+    {      
+        var validateResult = item.Validate();
+        
+        if (validateResult.IsInvalid())
+        {
+            // TODO: Log a warning.
+            return;
+        }           
 
         Items.Add(item);
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ff230689eaf292062acccb8a2e8c8f06cb1d2bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shawbrook.FunBooksAndVideos.Infrastructure.DependencyInjection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
