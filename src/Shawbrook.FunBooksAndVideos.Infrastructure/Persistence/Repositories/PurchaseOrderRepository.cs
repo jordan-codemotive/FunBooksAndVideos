@@ -10,7 +10,9 @@ internal class PurchaseOrderRepository(FunBooksAndVideosDbContext dbContext) : I
 {
     public async Task<Result<PurchaseOrder>> Get(int purchaseOrderId)
     {
-        var entity = await dbContext.PurchaseOrders.SingleOrDefaultAsync(x => x.Id == purchaseOrderId);
+        var entity = await dbContext.PurchaseOrders
+            .Include(x => x.Items)
+            .SingleOrDefaultAsync(x => x.Id == purchaseOrderId);
 
         if (entity is null)
         {
@@ -55,7 +57,7 @@ internal class PurchaseOrderRepository(FunBooksAndVideosDbContext dbContext) : I
             Items = items
         };
 
-        dbContext.PurchaseOrders.Add(purchaseOrderEntity);
+        await dbContext.PurchaseOrders.AddAsync(purchaseOrderEntity);
         await dbContext.SaveChangesAsync();
 
         return purchaseOrderEntity.Id;

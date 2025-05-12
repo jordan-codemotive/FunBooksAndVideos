@@ -1,4 +1,4 @@
-@Shawbrook.FunBooksAndVideos.WebApi_HostAddress = http://localhost:5168
+@Shawbrook.FunBooksAndVideos.WebApi_HostAddress = https://localhost:7074
 
 # valid submission (products & membership)
 POST {{Shawbrook.FunBooksAndVideos.WebApi_HostAddress}}/api/v1/purchase-order/submit

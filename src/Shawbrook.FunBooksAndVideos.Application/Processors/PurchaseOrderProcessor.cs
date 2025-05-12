@@ -61,7 +61,8 @@ internal class PurchaseOrderProcessor(
                 ProductType = product.Value.Type,
                 Price = product.Value.Price,
                 PurchaseOrderId = purchaseOrder.Id,
-                Quantity = productLineItem.Quantity
+                Quantity = productLineItem.Quantity,
+                ProductId = product.Value.Id
             });
         }
 
@@ -74,6 +75,8 @@ internal class PurchaseOrderProcessor(
         }
         else if (purchaseOrder.ContainsPhysicalProduct())
         {
+            purchaseOrder.Id = saveResult.Value;
+
             shippingService.GenerateShippingSlip(purchaseOrder);
         }
 

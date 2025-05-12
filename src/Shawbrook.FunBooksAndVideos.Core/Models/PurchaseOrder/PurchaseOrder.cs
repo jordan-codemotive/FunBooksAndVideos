@@ -7,7 +7,7 @@ public class PurchaseOrder
         CustomerId = customerId;
     }
 
-    public int Id { get; private set; }
+    public int Id { get; set; }
     public int CustomerId { get; init; }
     public IList<OrderLineItem> OrderLines { get; } = [];
     public double TotalPrice => OrderLines.Sum(i => i.Price);
